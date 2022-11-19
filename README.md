@@ -41,3 +41,23 @@ curl --location --request POST 'http://localhost:8080/user/add' \
 curl --location --request GET 'http://localhost:8080/user/delete?civilId=2'
 ```
 
+#### Submit request
+````
+curl --location --request POST 'localhost:8080/request/submit' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "name": "",
+    "status": "ACCEPTED",
+    "attachmentList": [
+        {
+            "name": "1"
+        },
+        {
+            "name": "12"
+        }
+    ],
+    "user": {
+        "civilId": "2"
+    }
+}'
+````
