@@ -3,6 +3,18 @@ This Application help admin to add, delete user and show all users' info.
 The application also allow users to submit requests to DB by validating 
 the user's request and save his data into DataBase.
 
+- The project has two controllers "UserController" and "UserFlowController".
+  - UserController is responsible for CRUD operations of the user (Add, get, getAll and delete user).
+  - UserFlowController is responsible for allowing user to submit his requests.
+
+#### NOTES:
+- to execute the unit test run:
+  - Right click on application the click on "Run 'All tests'".
+  - <img src="runAllTests.png" width="100" height="100">
+- to execute the unit test with coverage:
+  - Right click on application the click on "More Run/Debug" then choose "Run 'All tests' with coverage".
+  - <img src="runAllTestsWithCoverage.png" width="100" height="100">
+
 ### The application contains the below operations:
 #### User CRUD OPERATIONS:
 - GET User by Civil ID.
